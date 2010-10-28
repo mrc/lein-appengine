@@ -1,0 +1,25 @@
+# lein-appengine
+
+A plugin for leiningen to run the dev app server and appcfg tool.
+
+## Usage
+
+% lein devappserver -p 8889 war
+% lein appcfg update war
+
+## Installation
+
+Depends on appengine-tools-api.jar being in the classpath
+% export CLASSPATH=/opt/google/appengine-java-sdk-1.3.5/lib/appengine-tools-api.jar
+
+Build and install
+% lein install
+
+Add to project.clj dev-dependencies
+[lein-appengine "1.0.0"]
+
+## License
+
+Copyright (C) 2010 Matt Curtis
+
+Distributed under the Eclipse Public License, the same as Clojure.
